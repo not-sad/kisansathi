@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F9FBE7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌿 Crop Recommendation"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#33691E"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Soil Type"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner android:id="@+id/spinnerCropSoil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Season"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner android:id="@+id/spinnerCropSeason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <Button android:id="@+id/btnGetCrops"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Crop Recommendations"
+            android:backgroundTint="#33691E"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView android:id="@+id/tvCropResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15sp"
+            android:padding="12dp"
+            android:background="#DCEDC8"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>
