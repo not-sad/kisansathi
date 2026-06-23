@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nyay AI — Legal Rights Advisor India</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div id="sidebar">
+    <div id="brand">
+      <div id="logo">⚖</div>
+      <div>
+        <div id="brand-name">Nyay AI</div>
+        <div id="brand-sub">Legal Rights Advisor</div>
+      </div>
+    </div>
+
+    <div id="topics-label">Common issues</div>
+    <div id="topics">
+      <button class="topic-btn" onclick="ask('My landlord is not returning my security deposit after I moved out. What are my rights?')">
+        <span class="topic-icon">🏠</span> Security deposit not returned
+      </button>
+      <button class="topic-btn" onclick="ask('My landlord threatened to evict me without giving any notice. What can I do?')">
+        <span class="topic-icon">🚪</span> Illegal eviction threat
+      </button>
+      <button class="topic-btn" onclick="ask('My landlord entered my rented house without my permission. Is this legal?')">
+        <span class="topic-icon">🔑</span> Landlord entering without permission
+      </button>
+      <button class="topic-btn" onclick="ask('My employer has not paid my salary for 2 months. What are my rights?')">
+        <span class="topic-icon">💰</span> Unpaid salary
+      </button>
+      <button class="topic-btn" onclick="ask('My employer is forcing me to work overtime without extra pay. Is this legal?')">
+        <span class="topic-icon">⏰</span> Forced unpaid overtime
+      </button>
+      <button class="topic-btn" onclick="ask('I bought a defective product and the company refuses to replace or refund it. What can I do?')">
+        <span class="topic-icon">📦</span> Defective product / refund refused
+      </button>
+      <button class="topic-btn" onclick="ask('A bank or lender is harassing me for loan repayment using threats. What are my rights?')">
+        <span class="topic-icon">🏦</span> Loan recovery harassment
+      </button>
+      <button class="topic-btn" onclick="ask('I am facing workplace harassment or discrimination. What does Indian law say?')">
+        <span class="topic-icon">🛡</span> Workplace harassment
+      </button>
+    </div>
+
+    <div id="sidebar-footer">
+      <p>General legal information only.<br/>Consult a lawyer for serious matters.</p>
+    </div>
+  </div>
+
+  <div id="main">
+    <div id="chat-header">
+      <div id="chat-title">Know your rights</div>
+      <div id="chat-subtitle">Describe your situation and I'll explain what Indian law says</div>
+    </div>
+
+    <div id="chat-box">
+      <div class="msg ai">
+        <div class="avatar ai">⚖</div>
+        <div class="bubble">
+          <strong>Namaste! I'm Nyay AI</strong> — your legal rights advisor for India.<br><br>
+          Tell me about your situation — whether it's a landlord dispute, employer issue, consumer problem, or anything else. I'll explain your rights clearly and tell you exactly which Indian laws protect you and what steps you can take.<br><br>
+          You can also pick a common issue from the left panel to get started quickly.
+        </div>
+      </div>
+    </div>
+
+    <div id="input-area">
+      <textarea id="user-input" placeholder="Describe your situation in detail... (e.g. My landlord is demanding rent increase mid-lease)"></textarea>
+      <button id="send-btn" onclick="sendMsg()">Send</button>
+    </div>
+    <div id="input-hint">Press Enter to send · Shift+Enter for new line</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
